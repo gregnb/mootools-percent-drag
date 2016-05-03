@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag Percent Test</title>
+
+<style>
+	
+	#container {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 300px; height: 300px;
+		border: solid 1px #FF0000;
+		box-sizing: border-box;
+	}
+	
+	#item {
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		width: 50px; height: 50px; 
+		border: solid 1px #12F12B;
+		box-sizing: border-box;
+	}
+	
+</style>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools-more/1.6.0/mootools-more.js"></script>
+
+<script type="text/javascript" language="javascript" src="drag-percent.js" charset="utf-8"></script>
+
+<script type="application/javascript" language="javascript">
+//<![CDATA[
+
+window.addEvent('domready', function() {
+	
+	var dragPerc = new DragPercent('item', {
+		container: 'container'
+	});
+			
+});
+
+//]]>		
+</script>
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="item"></div>        
+	</div>
+
+</body>
+</html>
